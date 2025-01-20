@@ -9,8 +9,10 @@
   "author": "sunilCs7",
   "license": "ISC",
   "dependencies": {
+    "config": "^3.3.12",
     "cookie-parser": "^1.4.7",
     "cookies-parser": "^1.2.0",
+    "debug": "^4.4.0",
     "ejs": "^3.1.10",
     "express": "^4.21.2",
     "mongoose": "^8.9.5"

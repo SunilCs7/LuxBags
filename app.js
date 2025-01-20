@@ -3,6 +3,8 @@ const app = express();
 
 const dbConnection = require("./config/mongoose-connection");
 
+// dbConnection();
+
 // Routes
 const ownerRouter = require("./routes/owerRouter");
 const productRouter = require("./routes/productRouter");
@@ -21,8 +23,8 @@ app.get("/", (req, res) => {
   res.send("hey");
 });
 
-app.use("/Owner",ownerRouter);
-app.use("/product",productRouter);
-app.use("/user",userRouter);
+app.use("/Owners",ownerRouter);
+app.use("/products",productRouter);
+app.use("/users",userRouter);
 
 app.listen(3000);
