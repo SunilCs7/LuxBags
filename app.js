@@ -23,8 +23,12 @@ app.get("/", (req, res) => {
   res.send("hey");
 });
 
-app.use("/Owners",ownerRouter);
+app.use("/owners",ownerRouter);
 app.use("/products",productRouter);
 app.use("/users",userRouter);
 
-app.listen(3000);
+// app.listen(3000);
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
+  console.log(`Server running on port ${PORT}`);
+});
